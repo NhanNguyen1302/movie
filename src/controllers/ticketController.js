@@ -1,12 +1,13 @@
 
-const sequelize = require('../models/Datve');
-const initModels = require('../models/init-models');
-const models = initModels(sequelize);
 const {successCode, errCode, failCode} = require('../utils/response');
+const initModels = require("../models/init-models")
+const sequelize = require("../models/index")
+const models = initModels(sequelize);
+
 
 // POST đặt vé
 const bookTicket = async (req, res) => {
-
+        console.log("312312")
         let {tai_khoan, ma_lich_chieu, ma_ghe} = req.body;
         let newTicket = {
             tai_khoan,
@@ -24,7 +25,7 @@ const bookTicket = async (req, res) => {
 }
 // GET lấy danh sách vé
 const getTicketList = async (req, res) => {
-    
+    console.log("getTicketList", getTicketList)
 }
 
 module.exports = {

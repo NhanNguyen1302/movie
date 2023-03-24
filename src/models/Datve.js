@@ -1,4 +1,5 @@
 const Sequelize = require('sequelize');
+
 module.exports = (sequelize, DataTypes) => {
   return Datve.init(sequelize, DataTypes);
 }

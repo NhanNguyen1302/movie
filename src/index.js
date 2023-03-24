@@ -7,8 +7,8 @@ app.use(express.json());
 app.use(express.static('.'));
 
 
-app.listen(8000, () => {
-    console.log('movie is running...')
+app.listen(8080, () => {
+    console.log('movie is running... 8080')
 });
 
 const rootRoutes = require('./routes/index.routes');
