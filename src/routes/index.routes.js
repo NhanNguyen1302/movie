@@ -5,7 +5,7 @@ const userRoutes = require('./v2/userRoutes');
 
 
 rootRoutes.use('/ManageTicket', ticketRoutes);
-rootRoutes.use('/ManageUser', userRoutes)
+rootRoutes.use('/ManageUser', userRoutes);
 
 
 module.exports = rootRoutes;
