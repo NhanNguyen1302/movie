@@ -1,17 +1,17 @@
 
 // 200
-const successCode = (res, data) => {
+const successCode = (res, data, message) => {
     let dataSend = {
-        message: 'Thành công',
-        data
+        message: message,
+        data: data
     }
     res.status(200).send(dataSend);
 };
 //400
-const errCode = (res, data) => {
+const errCode = (res, data, message) => {
     let dataSend = {
-        message: 'Thất bại',
-        data
+        message: message,
+        data: data
     }
     res.status(400).send(dataSend);
 };
